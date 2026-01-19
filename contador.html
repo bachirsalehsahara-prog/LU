@@ -1,12 +1,36 @@
-<link rel="stylesheet" href="style.css">
-<h1 id="contador"></h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta atrás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="countdown-wrapper">
+    <div class="countdown-box">
+        <div class="countdown-title">???</div>
+        <div id="contador">Cargando...</div>
+    </div>
+</div>
+
+<footer>
+    <a href="index.html">⬅ Volver al inicio</a>
+</footer>
+
 <script>
-const fechaObjetivo = new Date("2026-01-25 23:59:59");
+const fechaObjetivo = new Date("2026-01-25T23:59:59");
 const contador = document.getElementById("contador");
 
-setInterval(() => {
+const intervalo = setInterval(() => {
   const ahora = new Date();
   const diferencia = fechaObjetivo - ahora;
+
+  if (diferencia <= 0) {
+    clearInterval(intervalo);
+    contador.textContent = "💙 Para siempre 💙";
+    return;
+  }
 
   const segundos = Math.floor(diferencia / 1000) % 60;
   const minutos = Math.floor(diferencia / 1000 / 60) % 60;
@@ -16,6 +40,6 @@ setInterval(() => {
   contador.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
 }, 1000);
 </script>
-      <footer>
-     <p><a href="index.html">Volver a la página principal</a></p>
-    </footer>
+
+</body>
+</html>
