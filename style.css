@@ -383,3 +383,77 @@ a:hover {
     color: #f5b942;
 }
 
+
+/* ========================= */
+/* CONTADOR COMING SOON */
+/* ========================= */
+
+body.dark-countdown {
+    background: radial-gradient(circle at top, #2b2b2b, #0f0f0f);
+    color: white;
+}
+
+/* Centrador */
+.flip-wrapper {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+.flip-title {
+    color: white;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+/* Contenedor de cajas */
+.flip-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Caja estilo flip */
+.flip-box {
+    background: linear-gradient(to bottom, #3a3a3a 0%, #1e1e1e 50%, #151515 100%);
+    border-radius: 14px;
+    width: 130px;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.08),
+        inset 0 -3px 0 rgba(0,0,0,0.7),
+        0 20px 40px rgba(0,0,0,0.7);
+}
+
+/* Línea horizontal central */
+.flip-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    right: 6px;
+    height: 2px;
+    background: rgba(0,0,0,0.8);
+}
+
+/* Número */
+.flip-number {
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #f2f2f2;
+    line-height: 1;
+}
+
+/* Texto inferior */
+.flip-label {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: #f5b942;
+}
