@@ -324,29 +324,59 @@ a:hover {
 }
 
 /* ========================= */
-/* CONTADOR CUENTA ATRÁS */
+/* CONTADOR – DISEÑO LIMPIO */
 /* ========================= */
 
-.countdown {
-    max-width: 700px;
-    margin: 80px auto;
-    text-align: center;
+.countdown-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.countdown h2 {
+.countdown-box {
+    background: white;
+    padding: 50px 60px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* Detalles en los bordes */
+.countdown-box::before,
+.countdown-box::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #e91e63;
+    border-radius: 15px;
+}
+
+.countdown-box::before {
+    top: -15px;
+    left: -15px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.countdown-box::after {
+    bottom: -15px;
+    right: -15px;
+    border-left: none;
+    border-top: none;
+}
+
+.countdown-title {
     font-size: 2.2rem;
     color: #ff9a8b;
     margin-bottom: 25px;
 }
 
 #contador {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #e91e63;
     letter-spacing: 2px;
 }
-
