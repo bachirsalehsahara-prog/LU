@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Cuenta atrás</title>
-</head>
-<body>
-
-<h1 id="contador">10</h1>
-
+<h1 id="contador"></h1>
 <script>
 const fechaObjetivo = new Date("2026-12-31 23:59:59");
+const contador = document.getElementById("contador");
 
 setInterval(() => {
   const ahora = new Date();
@@ -20,12 +12,7 @@ setInterval(() => {
   const horas = Math.floor(diferencia / 1000 / 60 / 60) % 24;
   const dias = Math.floor(diferencia / 1000 / 60 / 60 / 24);
 
-  document.body.innerHTML = `
-    ${dias}d ${horas}h ${minutos}m ${segundos}s
-  `;
+  contador.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
 }, 1000);
 </script>
 
-
-</body>
-</html>
