@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title> CUMPLEAÑOS FELIIIZZZZ</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="card">
+		<div class="imgBox">
+			<div class="bark"></div>
+			<img src="https://image.ibb.co/fYzTrb/lastofus.jpg">
+		</div>
+		<div class="details">
+			<h4 class="color3">FELIZ CUMPLEAÑOS AMOR!</h2>
+			<!--h4 class="color2 margin"></h3> -->
+			<p></p>En este día tan especial quiero
+			<p class="text-right">¡Besos y abrazos!</p>
+			<p class="text-right">Yess ♥</p>
+		</div>
+	</div>
+
+</body>
+</html>
