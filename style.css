@@ -521,7 +521,6 @@ h4 {
 	right: -5px;
 	width: 5px;
 	height: 100%;
-	background: #92A29C;
 	transform-origin: left;
 	transform: skewY(-45deg);
 }
@@ -582,3 +581,4 @@ h4 {
 .text-right {
 	text-align: right;
 }
+
